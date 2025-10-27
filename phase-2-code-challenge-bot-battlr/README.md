@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+The app fetches a list of bots from a local server and displays them in the Bot Collection. Users can add bots to their army by clicking the "ENLIST" button, which updates the state and adds the bot to their army. If the bot is already in the army, it can be removed by clicking the "REMOVE" button. The buttons are styled to changing color when hovered over to enhance user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App.js is the main component that manages the state of the application. The fetchBots function is used to retrieve bot data from the local server when the component mounts, to ensure the data is up-to-date.
 
-## Available Scripts
+BotCollection.js displays all available bots fetched from the server. It allows users to enlist bots by adding them to their army.
 
-In the project directory, you can run:
+SingleBot.js is responsible for rendering the details of a single bot, including its avatar, health, damage, armor, class, and catchphrase. There is the "ENLIST" and "REMOVE" buttons, for whether the bot can be removed or has been clicked. This component receives the bot's data.
 
-### `npm start`
+YourBotArmy.js shows the list of bots currently enlisted in the user’s army. It allows users to remove bots from the army if needed. This component receives the army list, the setArmy function, and the current state of the army as props.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app’s styling is defined in the index.css file.Styled the main container using flexbox layout for a responsive design, with padding and background color for appealing layout. The buttons are styled with colors, borders, and transition effects to improve user interaction.
+author James Kisengi
