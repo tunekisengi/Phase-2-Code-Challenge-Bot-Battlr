@@ -4,7 +4,7 @@ import BotCollection from './Botcollection';
 import YourBotArmy from './Yourbotarmy';
 
 // Base URL for fetching bot data
-const BASEURL = "https://json-server-vercel-eight-swart.vercel.app/bots";
+const BASEURL = "https://json-server-vercel-25iy.vercel.app/bots";
 
 function App() {
   // State to hold the list of bots fetched from the API
