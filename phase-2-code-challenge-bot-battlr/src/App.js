@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import BotCollection from './components/BotCollection';
-import YourBotArmy from './components/YourBotArmy';
+import BotCollection from './Botcollection';
+import YourBotArmy from './Yourbotarmy';
 
 // Base URL for fetching bot data
 const BASEURL = "http://localhost:3000/bots";
